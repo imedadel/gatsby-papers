@@ -19,9 +19,9 @@ class Layout extends React.Component {
       )
     } else {
       header = (
-        <h3>
+        <h2>
           <Link to={`/`}>{title}</Link>
-        </h3>
+        </h2>
       )
     }
     return (

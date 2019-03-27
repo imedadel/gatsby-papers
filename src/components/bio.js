@@ -18,23 +18,18 @@ function Bio() {
       render={data => {
         const { author, social } = data.site.siteMetadata
         return (
-          <div>
-            <Image
-              fixed={data.avatar.childImageSharp.fixed}
-              alt={author}
-              imgStyle={{
-                borderRadius: `50%`,
-              }}
-            />
-            <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
-              {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
-              </a>
-            </p>
-          </div>
+          <aside>
+            <section>
+              <p>
+                Written by <strong>{author}</strong> who lives and works in San
+                Francisco building useful things.
+                {` `}
+                <a href={`https://twitter.com/${social.twitter}`}>
+                  You should follow him on Twitter
+                </a>
+              </p>
+            </section>
+          </aside>
         )
       }}
     />
