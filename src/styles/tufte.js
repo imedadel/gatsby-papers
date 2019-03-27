@@ -112,10 +112,10 @@ article { position: relative;
 section { padding-top: 1rem;
           padding-bottom: 1rem; }
 
-p, ol, ul { font-size: 1.4rem;
+p, ol, ul, .katex-display { font-size: 1.4rem;
             line-height: 2rem; }
 
-p { margin-top: 1.4rem;
+p, .katex-display { margin-top: 1.4rem;
     margin-bottom: 1.4rem;
     padding-right: 0;
     vertical-align: baseline; }
@@ -142,7 +142,7 @@ blockquote footer { width: 55%;
                     font-size: 1.1rem;
                     text-align: right; }
 
-section > p, section > footer, section > table { width: 55%; }
+section > p, section > footer, section > table, section > .katex-display { width: 55%; }
 
 /* 50 + 5 == 55, to be the same width as paragraph */
 section > ol, section > ul { width: 50%;
@@ -277,7 +277,7 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
 @media (max-width: 760px) { body { width: 84%;
                                    padding-left: 8%;
                                    padding-right: 8%; }
-                            hr, section > p, section > footer, section > table { width: 100%; }
+                            hr, section > p, section > footer, section > table, section > .katex-display { width: 100%; }
                             pre.code { width: 97%; }
                             section > ol { width: 90%; }
                             section > ul { width: 90%; }
